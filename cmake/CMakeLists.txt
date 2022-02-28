@@ -918,3 +918,11 @@ if(ENABLE_TESTING)
     message(STATUS "Collecting code coverage data")
   endif()
 endif()
+
+target_sources(lammps PRIVATE
+    ${LAMMPS_SOURCE_DIR}/cutoffs.cpp
+    ${LAMMPS_SOURCE_DIR}/lammps_descriptor.cpp
+    ${LAMMPS_SOURCE_DIR}/radial.cpp
+    ${LAMMPS_SOURCE_DIR}/y_grad.cpp
+)
+
